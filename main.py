@@ -1,11 +1,13 @@
 import telebot
 import commandHandler
+from settings import BOT_TOKEN
 
-bot = telebot.TeleBot('bot_api_token')
+bot = telebot.TeleBot(BOT_TOKEN)
 
 
 @bot.message_handler(content_types=['text'])
 def handle_message(message):
+
     response = commandHandler.handle_command(message.text)
     response_type = str(type(response))
     if 'str' in response_type:
