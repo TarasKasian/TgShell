@@ -1,6 +1,5 @@
 import os
 import subprocess
-import pyautogui
 
 
 # TODO: user authorization (check user id)
@@ -29,6 +28,10 @@ def put_file(args):
 
 
 def take_screenshot(args):
+    try:
+        import pyautogui
+    except:
+        return "Can't take screenshot without user interface"
     return pyautogui.screenshot()
 
 
