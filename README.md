@@ -6,10 +6,7 @@ Simple command prompt via chat with telegram bot.
 
 ### Getting the source code
 
-> $ git clone https://github.com/gvieralopez/TgShell.git
-
-ℹ️ **Info:**| After completing this pull request you can clone from the original project: https://github.com/TarasKasian/TgShell.git
-:---: | :---
+> $ git clone https://github.com/TarasKasian/TgShell.git
 
 
 ### Install software dependencies
